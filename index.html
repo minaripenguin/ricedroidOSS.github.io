@@ -1,5 +1,10 @@
 <!DOCTYPE HTML>
 <html>
+
+        <!--Swiper-->
+        <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style.css">
+
 	<head>
 		<title>The Rise UI Project</title>
 		<meta charset="utf-8" />
@@ -11,16 +16,209 @@
 		<!-- Header -->
 		<section id="header">
 			<header class="major">
+				<h2>Introducing</h2>
 				<h1>Rise UI Project</h1>
-				<p>Rise UI 4.0 coming soon..</p>
+				<p>Rise your way.</p>
 			</header>
 		</section>
 		
+  	<center>
+		<!-- Swiper Header -->
+		<section>
+			<header class="major">
+				<h2>What is RiseUI Project?</h2>
+				<p2>A project for riceDroid OS - where we aim to bring AOSP in a completely different way <br>
+				 	in terms of UI and UX, the word "rise" was choosen to as the name of the project because it rhymes with the "rice" <br> and signifies this revision as our more serious approach in providing new user experience <br> (riceDroid was supposed to be a parody or just for fun operating system).</p2>
+			</header>
+		</section>
+  	</center>
+
+    <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe1.jpg" alt="">
+        </div>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe2.jpg" alt="">
+        </div>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe17.jpg" alt="">
+        </div>
+        <div class="content">
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe18.jpg" alt="">
+        </div>
+        <div class="content">
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe19.jpg" alt="">
+        </div>
+        <div class="content">
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe3.jpg" alt="">
+        </div>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe4.jpg" alt="">
+        </div>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe5.jpg" alt="">
+        </div>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe6.jpg" alt="">
+        </div>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe7.jpg" alt="">
+        </div>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe8.jpg" alt="">
+        </div>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe9.jpg" alt="">
+        </div>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe10.jpg" alt="">
+        </div>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe11.jpg" alt="">
+        </div>
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe12.jpg" alt="">
+        </div>
+        <div class="content">
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe13.jpg" alt="">
+        </div>
+        <div class="content">
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe14.jpg" alt="">
+        </div>
+        <div class="content">
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe15.jpg" alt="">
+        </div>
+        <div class="content">
+        </div>
+    </div>
+      <div class="swiper-slide">
+        <div class="img">
+          <img src="assets/img/swipe16.jpg" alt="">
+        </div>
+        <div class="content">
+        </div>
+    </div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: false,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      autoplay: {
+        delay: 1700,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 20,
+        depth: 500,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
 		<!-- Footer -->
 		<section id="footer">
 			<footer>
 				<ul class="icons">
-					<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://twitter.com/ricedroid" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
 					<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 					<li><a href="https://github.com/ricedroidOSS" class="icon alt fa-github"><span class="label">GitHub</span></a></li>

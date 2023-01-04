@@ -26,7 +26,7 @@ html {
 html {
 	background-color: #313a3d;
 	background-attachment: fixed, fixed;
-	background-image: url("images/overlay.png"), url("images/bg.png");
+	background-image: url("images/overlay.png"), url("images/bg.jpg");
 	background-position: top left, center center;
 	background-repeat: repeat, none;
 	background-size: auto, cover;
@@ -56,11 +56,21 @@ html.is-touch #wrapper {
 	overflow: auto;
 }
 
+@font-face {
+   font-family: googleSans;
+   src: url(GoogleSansMedium.ttf);
+}
+
+@font-face {
+   font-family: googleSansRegular;
+   src: url(GoogleSansRegular.ttf);
+}
+
 body, input, select, textarea {
 	color: #6f7577;
-	font-family: sans-serif;
+	font-family: googleSansRegular;
 	font-size: 15pt;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.75em;
 }
 
@@ -70,7 +80,7 @@ a {
 	-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	border-bottom: dotted 1px;
-	color: #8cd1a8;
+	color: #FFF;
 	text-decoration: none;
 }
 
@@ -80,13 +90,38 @@ a:hover {
 	text-decoration: none;
 }
 
-p {
+p2 {
+	color: #FFF;
+	font-family: googleSansRegular;
+	font-size: 12pt;
+	font-weight: 300;
+	line-height: 1.75em;
 	margin: 0 0 2em 0;
+}
+
+p {
+	color: #6f7577;
+	font-family: googleSansRegular;
+	font-size: 12pt;
+	font-weight: 300;
+	line-height: 1.75em;
+	margin: 0 0 2em 0;
+}
+
+h2 {
+	color: #FFFFFF;
+	font-weight: 500;
+	font-family: googleSans;
+	letter-spacing: 0.275em;
+	line-height: 1em;
+	margin: 0 0 1em 0;
+	font-size: 30pt;
 }
 
 h1 {
 	color: #61686b;
-	font-weight: 400;
+	font-weight: 500;
+	font-family: googleSans;
 	letter-spacing: 0.275em;
 	line-height: 1em;
 	margin: 0 0 1em 0;
@@ -188,7 +223,7 @@ html body {
 html body:before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	font-family: FontAwesome;
+	font-family: googleSans;
 	font-style: normal;
 	font-weight: normal;
 	text-transform: none !important;
@@ -369,7 +404,7 @@ ul.icons-grid:after {
 #header header {
 	color: rgba(255, 255, 255, 0.5);
 	display: inline-block;
-	padding-bottom: 8em;
+	padding-bottom: 50px;
 	vertical-align: middle;
 }
 
@@ -650,3 +685,4 @@ ul.icons-grid:after {
 	}
 
 }
+
